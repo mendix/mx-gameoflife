@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="GameOfLife.widget.GameOfLife" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>Conway's Game Of Life</name>
+  <description>Trivial implementation of Conway's Game Of Life</description>
+
+<icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2Fy
+ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAoZJREFUeNpEkTtoVEEUhs85M/fu7s1K
+VKIQUSwMsfABARERLSSIldoKNj4QBLEWiwhWVoKVldgICiLY2ARBtAiKYiBoxOey
+SJLdLNns6969c+d1HAX1FAPD/OfMd/4f59rm5uv8Q4pEQOCBCRgAwSMiM8LvWygJ
+aoLWbxzdJq++yeeXbdBCeGULOAJYAAdZjIIQlZeI1iEm9ZVaq92Tq4Mc4spEgoe2
+Gi9K5IzyUYLcUfp50yssky8gnM6wh9VWX7KIodCnJpPbh0vNQlRJVSPZVSjjkaff
++5fn8pwTIQ13G6wyWYqJXCAUEEF9wFOP0kuveF3D9LPB+Zf9M5OVfVvKYbDLWtxe
+Rme8ySWgBZbS/d6yWdhVI8KQpYIaLQr41djAoM3LNcHaUsnHjuBvBUOAgldkUEaS
+ygJEsKG1Ihrf7pycOLZ7G2QZGP+/4V9XBJ6swrxTEeyHPaHVxYPbp8YSKAryJIEF
+kGdiF9SspbOOkXuN1npaW9s4c3znm10byjEu1JqBHG0efrAAmQBDYbu0BXkHgRKt
+0oE++2B+anzT9enJmScfZz81AzCzkeCHoPukw94xqFR4IZ0QmkOIo1GJKEC6YDRy
+EXJn6wktg7Zh6p+k2RvnApFzY5G6d+7Q84WlK48Xrp3ae2LPDuilGNidM6AhpF+J
+LBmIwSYxhlw3j8gd1fj+y893Z7/2Crt/fAy8kcaI5PSlbJhHLqp38tf1PngxHKi5
+L828gKGyL2pr3VwZ7d4v/qh31CgpPPjwy9taN3RDPgQpAx6kA4hdsBy6OUQBNWQ3
+BBSg6cDOCN+tZtdmfy6udcragyXru95VwBdxkVkn0Cny3jI6ne/ZWL114cgvAQYA
+01518wUVoBgAAAAASUVORK5CYII=</icon>
+
+  <properties>
+      <property key="height" type="integer" defaultValue="20">
+          <caption>Height</caption>
+          <category>Appearance</category>
+          <description>Rows in the grid</description>
+      </property>
+      <property key="width"  type="integer" defaultValue="40">
+          <caption>Width</caption>
+          <category>Appearance</category>
+          <description>Columns in the grid</description>
+      </property>
+      <property key="runinterval"  type="integer" defaultValue="500">
+          <caption>Run interval</caption>
+          <category>Appearance</category>
+          <description>Delay in milliseconds between generations</description>
+      </property>
+
+  </properties>
+</widget>
+

@@ -1,0 +1,45 @@
+<div> 
+	<style type="text/css">
+		.MxLife { background-color: #fff; }
+		.MxLife .grid {
+			cursor: pointer;
+			background-color: #000;
+			color: #000;
+			border: 1px solid #f00;
+		}
+		.MxLife .alive { color : #fff; }
+		.MxLife .dead { color : #000; }
+	</style>
+	<div class="MxLife">
+		<table>
+			<tr>
+				<td width="70%" style="width:70%">
+					<center>
+						<div dojoAttachPoint="gridNode" class="grid"></div>
+					</center>
+					<hr />
+					<span class="MxButton" dojoAttachEvent="onclick: eventNext">[-&gt; Next (+1) Generation]</span> - 
+					<span class="MxButton" dojoAttachPoint="runnerNode" dojoAttachEvent="onclick: eventToggleRun">[Start running]</span> - 
+					<span class="MxButton" dojoAttachEvent="onclick: eventRandomize">[Randomize]</span>
+					<br />
+				</td>
+				<td width="30%" style="width:30%">
+					<div>
+						This is an implementation of 
+						<a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Conway's Game of Life</a>.
+					</div>
+					<div>
+						The basic rules are,
+						<ul>
+							<li>A cell with less than two live neighbours dies (loneliness)</li>
+							<li>A cell with more than three live neighbours dies (starvation)</li>
+							<li>A cell with two or three live neighbours lives</li>
+							<li>A dead cell with three live neighbours comes to life</li>
+						</ul>
+					</div>
+					<div><b> Generation : <span dojoAttachPoint="countNode">0</span></b></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
